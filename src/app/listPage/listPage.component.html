@@ -1,0 +1,12 @@
+<app-search
+  (onFilter)="onFilter($event)"
+></app-search>
+<app-list
+  [asteroids]="asteroidsNearFiltered$ | async"
+  (onSelect)="goToDetails($event)"
+></app-list>
+<app-pagination
+  [maxPage]="maxPage$ | async"
+  [currentPage]="currentPage$ | async"
+  (goToPage)="goToPage($event)"
+></app-pagination>

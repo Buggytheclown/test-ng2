@@ -1,0 +1,4 @@
+<p *ngIf="!is404">
+  {{asteroid$ | async | json}}
+</p>
+<p *ngIf="is404">Sorry, nothing found!</p>

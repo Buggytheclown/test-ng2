@@ -1,0 +1,12 @@
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>absolute_magnitude_h</th>
+    <th>estimated_diameter_min_km</th>
+  </tr>
+  <tr (click)="onSelect.emit(asteroid.neo_reference_id)" *ngFor="let asteroid of asteroids">
+    <td>{{asteroid?.name}}</td>
+    <td>{{asteroid?.absolute_magnitude_h}}</td>
+    <td>{{asteroid?.estimated_diameter.meters.estimated_diameter_min}}</td>
+  </tr>
+</table>

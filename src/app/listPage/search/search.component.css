@@ -1,0 +1,10 @@
+.filter {
+  text-align: center;
+}
+
+.filter__input {
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 10px 6px -6px #777;
+  padding: 10px;
+}

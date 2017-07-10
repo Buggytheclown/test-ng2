@@ -1,0 +1,12 @@
+<div class="pagination">
+  <a (click)="goToPage.emit(currentPage - 1)">&laquo;</a>
+
+  <select class="pagination__select" name="paginator" [value]="currentPage" (change)="onSelect($event)">
+    <option
+      *ngFor="let page of (maxPage+1) | toRangeFrom: 1"
+      [value]="page">{{page}}
+    </option>
+  </select>
+
+  <a (click)="goToPage.emit(currentPage + 1)">&raquo;</a>
+</div>
